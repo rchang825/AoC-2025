@@ -3,6 +3,40 @@ function solution(homework) {
   // number of problems = number of operation symbols on last line of input
   const n = homework.length - 1;
   // console.log(homework);
+  homework = homework.map(line => line.split(''));
+  let numProblems = 0;
+  homework[n].forEach((ch) => { if (ch !== ' ') {
+      numProblems++;
+    }
+  });
+  // console.log(homework);
+  // console.log('num Problems', numProblems);
+  // total
+  let total = 0;
+  // helper solve(column)
+  function solve(column) {
+    // find operation
+    const op = homework[n][column];
+    // define answer
+    // start from the bottom (n - 1 row)
+    //
+    // return answer
+    return ans;
+  }
+  // iterate for as many problems there are
+  for (let i = 0; i < numProblems; i++) {
+    // add answer to total
+    // total += solve(i);
+  }
+
+  // return total
+  return total;
+}
+function solutionp1(homework) {
+  // number of operands in each problem = total lines - 1
+  // number of problems = number of operation symbols on last line of input
+  const n = homework.length - 1;
+  // console.log(homework);
   homework = homework.map(line => line.trim().split(/\s+/));
   let numProblems = homework[n].length;
   // console.log(homework);

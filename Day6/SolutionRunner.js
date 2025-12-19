@@ -9,7 +9,7 @@ function parseInput(filePath) {
 }
 
 function main() {
-    const inputFilePath = path.join(__dirname, '/input.txt');
+    const inputFilePath = path.join(__dirname, '/example.txt');
     const homework = parseInput(inputFilePath);
     let res = solution(homework);
     console.log('Grand Total:', res);
