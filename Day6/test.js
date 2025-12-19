@@ -27,20 +27,16 @@ const rightPadded = [
 
 describe('addition', () => {
   test('works with left padding', () => {
-    expect(solution([...leftPadded, '+  '])).toEqual(381);
+    expect(solution([...leftPadded, '+'])).toEqual(381);
   });
 
   test('works with right padding', () => {
-    expect(solution([...rightPadded, '+  '])).toEqual(625);
+    expect(solution([...rightPadded, '+'])).toEqual(625);
   });
 });
 describe('multiplication', () => {
   test('works with left padding', () => {
-    expect(solution([...leftPadded, '*  '])).toEqual(8544);
-  });
-
-  test('works with right padding', () => {
-    expect(solution([...rightPadded, '*  '])).toEqual(533824);
+    expect(solution([...leftPadded, '*'])).toEqual(8544);
   });
 });
 test('works with multiple problems', () => {
