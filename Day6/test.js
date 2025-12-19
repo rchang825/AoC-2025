@@ -44,5 +44,5 @@ describe('multiplication', () => {
   });
 });
 test('works with multiple problems', () => {
-  expect(solution(example).toEqual(3263827));
+  expect(solution(example)).toEqual(3263827);
 });
