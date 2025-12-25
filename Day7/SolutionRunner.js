@@ -12,7 +12,7 @@ function main() {
     const inputFilePath = path.join(__dirname, '/input.txt');
     const diagram = parseInput(inputFilePath);
     let res = solution(diagram);
-    console.log('Number of Tachyons:', res);
+    console.log('Number of Timelines:', res);
 }
 
 main();
